@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questao53</title>
+</head>
+
+<body>
+  <h1>Digite um número</h1>
+  <input type="number" id="numero" placeholder="Digite um número">
+  <button onclick="calcularDobro()">Calcular o Dobro</button>
+  <p id="resultado"></p>
+
+  <script>
+    function calcularDobro() {
+      let numero = parseInt(document.getElementById("numero").value);
+
+      if (isNaN(numero)) {
+        document.getElementById("resultado").textContent = "insira um número válido.";
+        return;
+      }
+      let dobro = numero * 2;
+      document.getElementById("resultado").textContent = "O dobro de " + numero + " é " + dobro + ".";
+    }
+  </script>
+</body>
+</html>

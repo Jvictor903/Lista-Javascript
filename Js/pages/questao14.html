@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao 14</title>
+</head>
+<body>
+    <p>Qal seu nome meu nobre?</p>
+    <label for="nome">Digite seu nome</label>
+    <input type="text" id="nome" name="nome">
+    <button onclick="ola()">Enviar</button>
+
+    <p id="saudacao"></p>
+
+    <script>
+        function ola () {
+            const nome = document.getElementById("nome").value;
+            document.getElementById("saudacao").innerText = `Olá, ${nome}!`;
+        }
+    </script>
+</body>
+</html>
